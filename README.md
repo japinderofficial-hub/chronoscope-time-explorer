@@ -68,8 +68,6 @@ chronoscope/
 
 │── script.js
 
-│── assets/
-
 │── README.md
 
 ---
