@@ -1,0 +1,72 @@
+/* Basic reset for simple spacing */
+* {
+	box-sizing: border-box;
+}
+
+/* Page style */
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background: #f4f4f4;
+	color: #222;
+}
+
+/* Dark mode style */
+body.dark {
+	background: #1e1e1e;
+	color: #f4f4f4;
+}
+
+/* Header style */
+header {
+	padding: 16px;
+	background: #2d6cdf;
+	color: white;
+}
+
+/* Main wrapper */
+main {
+	max-width: 900px;
+	margin: 16px auto;
+	padding: 0 12px;
+}
+
+/* Controls area */
+.controls {
+	display: grid;
+	gap: 8px;
+	margin-bottom: 16px;
+}
+
+/* Inputs and buttons */
+input,
+select,
+button {
+	padding: 8px;
+	font-size: 14px;
+}
+
+/* Card style */
+.card {
+	background: white;
+	padding: 12px;
+	border: 1px solid #ddd;
+	margin-bottom: 12px;
+}
+
+/* Card style in dark mode */
+body.dark .card {
+	background: #2a2a2a;
+	border-color: #444;
+}
+
+/* List spacing */
+ul {
+	padding-left: 20px;
+}
+
+/* Small text note */
+.small-note {
+	font-size: 12px;
+	opacity: 0.8;
+}
