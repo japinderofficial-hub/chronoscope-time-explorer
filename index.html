@@ -1,98 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChronoScope</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<main class="dashboard">
-    <header class="panel topbar">
-        <div class="brand">
-            <div class="logo">🕰️</div>
-            <div>
-                <h1>CHRONOSCOPE</h1>
-                <p>Time Travel &amp; Global Explorer</p>
-            </div>
-        </div>
-        <button id="themeBtn" class="ghost-btn">🌙 Mode</button>
+    <header>
+        <h1>🕰️ ChronoScope</h1>
+        <p>Simple Time Travel Explorer</p>
     </header>
-
-    <section class="control-grid">
-        <div class="panel control search-panel">
-            <label for="searchInput">Search for year</label>
-            <input id="searchInput" type="text" placeholder="Search events, movies, news...">
-            <button id="exploreBtn" class="primary-btn" style="margin-top: 10px; width: 100%;">Explore Timeline</button>
+    <div class="controls">
+        <input type="number" id="year" placeholder="Year (e.g. 2000)">
+        <input type="text" id="country" placeholder="Country (e.g. India)">
+        <button id="btn">Explore!</button>
+    </div>
+    <h3 id="quote">Loading quote...</h3>
+    <div class="grid">
+        <div class="box">
+            <h2>📜 Events</h2>
+            <ul id="events"></ul>
         </div>
-
-        <div class="panel control year-panel">
-            <div class="year-head">
-                <label for="yearRange">Select Year</label>
-                <strong id="yearLabel">1999</strong>
-            </div>
-            <input id="yearRange" type="range" min="1970" max="2025" value="1999">
-            <select id="countrySelect">
-                <option>India</option>
-                <option>United Kingdom</option>
-                <option>United States</option>
-                <option>Japan</option>
-            </select>
+        <div class="box">
+            <h2>📰 News</h2>
+            <ul id="news"></ul>
         </div>
-
-        <div class="panel control news-panel">
-            <h3>News Headlines</h3>
-            <ul id="newsList" class="mini-list"></ul>
+        <div class="box">
+            <h2>🎬 Movies/Shows</h2>
+            <ul id="movies"></ul>
         </div>
-    </section>
-
-    <section class="board-grid">
-        <article class="panel timeline-panel">
-            <h3>Decade Timeline</h3>
-            <div class="timeline">
-                <span>1970s</span>
-                <span>1980s</span>
-                <span>1990s</span>
-                <span>2000s</span>
-                <span>2010s</span>
-                <span>2020s</span>
-                <i id="timelineYear">1999</i>
-            </div>
-        </article>
-
-        <article class="panel events-panel">
-            <h3>Historical Events</h3>
-            <ul id="eventsList" class="card-list"></ul>
-        </article>
-
-        <article class="panel movies-panel">
-            <h3>Popular Movies</h3>
-            <ul id="moviesList" class="card-list"></ul>
-        </article>
-
-        <article class="panel weather-panel">
-            <h3>Weather Snapshot</h3>
-            <div style="margin-bottom: 10px;">
-                <label for="weatherDate" style="font-size: 0.8rem; color: var(--muted); display: block; margin-bottom: 5px;">Select a date in the year to see weather</label>
-                <input type="date" id="weatherDate" style="width: 100%; height: 32px; border-radius: 6px; border: 1px solid var(--line); background: var(--bg); color: var(--text); padding: 0 10px;">
-            </div>
-            <div id="weatherGrid" class="weather-grid"></div>
-        </article>
-
-        <article class="panel quote-panel">
-            <h3>Time Travel Quote</h3>
-            <p id="quoteText"></p>
-        </article>
-
-    </section>
-
-    <footer class="footer">© 2026 ChronoScope UI</footer>
-</main>
-
-<script src="script.js"></script>
+        <div class="box">
+            <h2>🌦️ Weather</h2>
+            <div id="weather"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
