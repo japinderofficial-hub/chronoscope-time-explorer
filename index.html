@@ -5,35 +5,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
-    <header>
-        <h1><span class="logo-emoji">🕰️</span> ChronoScope</h1>
-        <p>Simple Time Travel Explorer</p>
-    </header>
-    <div class="controls">
-        <input type="number" id="year" placeholder="Year (e.g. 2000)">
-        <input type="text" id="country" placeholder="Country (e.g. India)">
-        <button id="btn">Explore!</button>
+
+<div class="container">
+    <div class="top">
+        <h1>🕰️ ChronoScope</h1>
+        <p class="tag">Explore Time & World</p>
+
+        <div class="controls">
+            <input type="number" id="year" placeholder="Year (e.g. 2007)">
+            <input type="text" id="country" placeholder="Country (e.g. India)">
+            <button onclick="explore()">Explore</button>
+        </div>
+
+        <p id="quote">Loading inspiration...</p>
     </div>
-    <h3 id="quote">Loading quote...</h3>
+
     <div class="grid">
-        <div class="box">
+        <div class="card">
             <h2>📜 Events</h2>
             <ul id="events"></ul>
         </div>
-        <div class="box">
+
+        <div class="card">
             <h2>📰 News</h2>
             <ul id="news"></ul>
         </div>
-        <div class="box">
-            <h2>🎬 Movies/Shows</h2>
+
+        <div class="card">
+            <h2>🎬 Movies</h2>
             <ul id="movies"></ul>
         </div>
-        <div class="box">
+
+        <div class="card">
             <h2>🌦️ Weather</h2>
-            <div id="weather"></div>
+            <p id="weather"></p>
         </div>
     </div>
-    <script src="script.js"></script>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
