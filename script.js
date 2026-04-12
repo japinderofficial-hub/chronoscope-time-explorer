@@ -7,7 +7,6 @@ function explore() {
         return;
     }
 
-    // Set loading state
     const loader = "<li>Searching...</li>";
     document.getElementById("events").innerHTML = loader;
     document.getElementById("news").innerHTML = loader;
@@ -38,7 +37,7 @@ async function getMovies(year) {
     displayList("movies", data.query.search);
 }
 
-// Helper function to keep code clean
+
 function displayList(id, results) {
     var list = document.getElementById(id);
     list.innerHTML = "";
