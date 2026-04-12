@@ -59,6 +59,10 @@ h1 {
 .controls button:hover {
     background: #16a34a;
 }
+#themeBtn {
+    background: #64748b;
+    margin-left: 10px;
+}
 
 #quote {
     margin-top: 25px;
@@ -113,4 +117,27 @@ li {
     font-size: 22px;
     font-weight: bold;
     color: #fbbf24;
+}
+body.light-mode {
+    background: radial-gradient(circle at top, #f1f5f9, #cbd5e1);
+    color: #1e293b;
+}
+
+body.light-mode .card {
+    background: rgba(255, 255, 255, 0.8);
+    border-color: #cbd5e1;
+}
+
+body.light-mode h1, body.light-mode .card h2 {
+    color: #0f172a;
+}
+
+body.light-mode .controls input {
+    background: white;
+    color: black;
+    border: 1px solid #cbd5e1;
+}
+
+body.light-mode .tag, body.light-mode #quote, body.light-mode ul {
+    color: #475569;
 }
