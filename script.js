@@ -23,6 +23,9 @@ async function getQuote() {
     let data = await response.json();
     quoteText.innerText = `"${data.quote}" - ${data.author}`;
 }
+
+const tbtn = document.getElementById('theme-toggle');
+if(tbtn) tbtn.onclick = () => { document.documentElement.classList.toggle('light'); tbtn.textContent = document.documentElement.classList.contains('light') ? '☀️' : '🌙' };
 getQuote();
 async function getEvents(year, country) {
     let url = `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${year}+in+${country}&utf8=&format=json&origin=*`;
