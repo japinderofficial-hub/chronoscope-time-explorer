@@ -6,7 +6,6 @@ function explore() {
         alert("Please enter both Year and Country");
         return;
     }
-
     const loader = "<li>Searching...</li>";
     document.getElementById("events").innerHTML = loader;
     document.getElementById("news").innerHTML = loader;
@@ -36,7 +35,6 @@ async function getMovies(year) {
     var data = await res.json();
     displayList("movies", data.query.search);
 }
-
 
 function displayList(id, results) {
     var list = document.getElementById(id);
@@ -77,3 +75,15 @@ async function getQuote() {
 }
 
 getQuote();
+
+function toggleTheme() {
+    var element = document.body;
+    element.classList.toggle("light-mode");
+    
+    var btn = document.getElementById("themeBtn");
+    if (element.classList.contains("light-mode")) {
+        btn.innerText = "🌙 Night Mode";
+    } else {
+        btn.innerText = "☀️ Day Mode";
+    }
+}
