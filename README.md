@@ -63,13 +63,7 @@ chronoscope/
 - ✅ **Milestone 1 (Completed)**: Project idea finalized, APIs selected, GitHub repository created, README documentation prepared
 - ✅ **Milestone 2**: Integrate APIs using Fetch, Display dynamic data on UI
 - ✅ **Milestone 3**: Implement search, filtering, and sorting, Add interactivity and UI enhancements
-- 🔜 **Milestone 4**: Final optimization and code cleanup, Deployment and final submission
-
-## 💡 Future Enhancements
-- Improve search feature
-- Add better design and styling
-- Make website work better on all devices
-- Fix bugs and improve performance
+- ✅ **Milestone 4**: Final optimization and code cleanup, Deployment and final submission
 
 ## 👩‍💻 Author
 Japinder Kaur
